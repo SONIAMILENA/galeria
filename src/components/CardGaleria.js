@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./card.css";
+import "./cardGaleria.css";
 
 
-function Card({ imageSource, title }) {
+function CardGaleria({ imageSource, title }) {
   return (
     <div className="card text-center bg-pink animateanimated animatefadeInUp">
       <div className="overflow">
@@ -20,10 +20,10 @@ function Card({ imageSource, title }) {
   );
 }
 
-Card.propTypes = {
+CardGaleria.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string,
   imageSource: PropTypes.string
 };
 
-export default Card;
+export default CardGaleria;

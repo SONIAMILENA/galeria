@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import CardGaleria from "./CardGaleria";
 
 
 import image1 from "../assets/decorado1.jpg";
@@ -15,7 +15,7 @@ import image10 from '../assets/decorado12.jpg'
 import image11 from '../assets/decorado8.jpg'
 import image12 from '../assets/decorado3.jpg' 
 
-const cards = [
+const cardsGaleria = [
   {
     id: 1,
     title: "Olas del Mar",
@@ -90,13 +90,13 @@ const cards = [
   },
 ]; 
 
-function Cards() {
+function CardsGaleria() {
   return (
     <div className="container d-flex justify-content-center align-items-center h-100">
       <div className="row">
-        {cards.map(({ title, image, id }) => (
+        {cardsGaleria.map(({ title, image, id }) => (
           <div className="col-md-4" key={id}>
-            <Card imageSource={image} title={title} />
+            <CardGaleria imageSource={image} title={title} />
           </div>
         ))}
       </div>
@@ -104,4 +104,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default CardsGaleria;
